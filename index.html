@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    body{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      /* height: 100vh; */
+    }
+    .contentBx {
+      display: flex;
+      background: hsl(233, 47%, 7%);
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      height: 85%;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: row;
+      width: 70%;
+      height: 60%;
+      margin: 100px 60px;
+      /* align-items: center; */
+      justify-content: center;
+      background: hsl(244, 38%, 16%);
+      color: white;
+    }
+
+    .imgBx {
+      height: inherit;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: hsl(281, 100%, 50%);
+      opacity: 1;
+    }
+
+    .imgBx img {
+      height: 100%;
+      width: 100%;
+      opacity: 0.6;
+    }
+    .text{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: -50px;
+    }
+    .text .heading{
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 2rem;
+      padding: 40px 60px;
+      padding-bottom: 0px;
+      margin-bottom: 10px;
+    }
+    .text .heading .one{
+      color: hsl(277, 64%, 61%);
+    }
+
+    .text .para{
+      padding: 0px 60px;
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      color: hsla(0, 0%, 100%, 0.75);
+    }
+    .text .content{
+      display: flex;
+      flex-direction: row;
+      padding: 0px 0px;
+      font-family: 'Inter', sans-serif;
+      margin-right: 60px;
+    }
+    .content .stats{
+      display: flex;
+      flex-direction: column;
+      color: hsla(0, 0%, 100%, 0.6);
+      margin: 0px 25px; 
+      margin-top: 40px;     
+    }
+    .two{
+      font-size: 1.4rem;
+      color: white;
+      font-style: 'Lexend Deca', sans-serif;
+      font-weight: 800;
+    }
+    .three{
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="contentBx">
+    <div class="card">
+      <div class="text">
+        <div class="heading">Get <span class="one">insights</span> that help your business grow.</div><br>
+
+        <div class="para">Discover the benefits of data analytics and make better decisions regarding revenue, customer
+          experience, and overall efficiency.</div><br>
+
+        <div class="content">
+          <div class="stats"><span class="two">10k+</span><span class="three">COMPANIES</span></div>
+          <div class="stats"><span class="two">314</span><span class="three">TEMPLATES</span></div>
+          <div class="stats"><span class="two">12M+</span><span class="three">QUERIES</span></div>
+
+        </div>
+      </div>
+      <div class="imgBx">
+        <img src="./images/image-header-desktop.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">ABHISHEK RATHI</a>.
+  </div>
+</body>
+
+</html>
